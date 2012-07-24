@@ -1,6 +1,10 @@
 # some from https://github.com/mathiasbynens/dotfiles/blob/master/.aliases
 
+# Reload config
 alias rl='source ~/.bash_profile'
+
+# Grep for processes
+alias psg="ps aux | grep $1"
 
 # Files
 alias ll="ls -la"
