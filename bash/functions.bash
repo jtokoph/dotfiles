@@ -67,3 +67,7 @@ function nt () {
         -e "do script \"cd $pwd; clear\" in front window" \
         -e "end tell" > /dev/null
 }
+
+function whoisc() {
+    open http://whois.sc/$1
+}
