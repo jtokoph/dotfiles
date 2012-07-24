@@ -14,3 +14,17 @@ function pc() {
 }
 
 export PROMPT_COMMAND='pc'
+
+# Allow quick access to projects/sites
+function s() {
+    cd ~/Sites/$1
+}
+
+function _s() {
+    local completions=`ls ~/Sites/`
+    local word=${COMP_WORDS[COMP_CWORD]}
+    COMPREPLY=( $( compgen -W "$completions" -- $word ))
+    return 0
+}
+
+complete -F _s s
