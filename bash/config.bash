@@ -1,6 +1,6 @@
-export GIT_PS1_SHOWDIRTYSTATE=1
-export GIT_PS1_SHOWUNTRACKEDFILES=1
-export GIT_PS1_SHOWSTASHSTATE=1
+#export GIT_PS1_SHOWDIRTYSTATE=1
+#export GIT_PS1_SHOWUNTRACKEDFILES=1
+#export GIT_PS1_SHOWSTASHSTATE=1
 
 # Always wait
 export EDITOR="mate -w -l"
@@ -29,5 +29,13 @@ export BLUE
 export BOLD
 export RESET
 
-export PS1="\[$YELLOW\]\h\[$WHITE\]:\[$BLUE\]\W\[$GREEN\]\$(__git_ps1 \" (%s)\")\[$RED\] · \[$RESET\]"
+function parse_git_dirty() {
+	[[ $(git status 2> /dev/null | tail -n1) != "nothing to commit (working directory clean)" ]] && echo "*"
+}
+
+function parse_git_branch() {
+	git branch --no-color 2> /dev/null | sed -e '/^[^*]/d' -e "s/* \(.*\)/ (\1$(parse_git_dirty))/"
+}
+
+export PS1="\[$YELLOW\]\h\[$WHITE\]:\[$BLUE\]\W\[$GREEN\]\$(parse_git_branch)\[$RED\] · \[$RESET\]"
 export PS2="\[$PURPLE\]→ \[$RESET\]"
