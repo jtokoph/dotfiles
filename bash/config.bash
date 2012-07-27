@@ -3,7 +3,7 @@
 #export GIT_PS1_SHOWSTASHSTATE=1
 
 # Always wait
-export EDITOR="mate -w -l"
+export EDITOR="mate -w"
 
 export CLICOLOR=1
 
