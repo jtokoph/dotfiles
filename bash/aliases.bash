@@ -31,6 +31,9 @@ alias c="tr -d '\n' | pbcopy"
 # URL-encode strings
 alias urlencode='python -c "import sys, urllib as ul; print ul.quote_plus(sys.argv[1]);"'
 
+# Updates
+alias update='brew update; brew upgrade; npm -g update; npm update'
+
 # One of @janmoesen’s ProTip™s
 for method in GET HEAD POST PUT DELETE TRACE OPTIONS; do
     alias "$method"="lwp-request -m '$method'"
