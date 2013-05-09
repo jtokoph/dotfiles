@@ -13,6 +13,7 @@ alias ...="cd ../.."
 
 # SSH aliases
 alias ssh="ssh -A"
+alias sshq='ssh -o "UserKnownHostsFile /dev/null" -o "StrictHostKeyChecking no"'
 
 # IP addresses
 alias ip="dig +short myip.opendns.com @resolver1.opendns.com"
