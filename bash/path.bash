@@ -1,1 +1,1 @@
-export PATH=/usr/local/share/npm/bin:$HOME/.dotfiles/bin:$HOME/bin:/usr/local/sbin:/usr/local/bin:/usr/local/Cellar/ruby/1.9.3-p385/bin:$PATH
+export PATH=/usr/local/share/npm/bin:$HOME/.dotfiles/bin:$HOME/bin:/usr/local/sbin:/usr/local/bin:/usr/local/Cellar/ruby/2.0.0-p195/bin:/usr/local/share/python:$PATH
