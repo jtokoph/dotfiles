@@ -39,3 +39,6 @@ alias update='brew update; brew upgrade; npm -g update; npm update'
 for method in GET HEAD POST PUT DELETE TRACE OPTIONS; do
     alias "$method"="lwp-request -m '$method'"
 done
+
+# simple whois-servers
+alias server='python -m SimpleHTTPServer '
