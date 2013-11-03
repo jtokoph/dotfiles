@@ -42,3 +42,14 @@ done
 
 # simple whois-servers
 alias server='python -m SimpleHTTPServer '
+
+alias activate='. .venv/bin/activate'
+
+function tab {
+  # Will cd into current dir if called without arg.
+  osascript -e 'tell application "Terminal"' \
+            -e 'tell application "System Events" to keystroke "t" using {command down}' \
+            -e "do script \"cd `pwd` && cd ${1-.} && clear\" in front window" \
+            -e 'end tell' > /dev/null
+}
+alias t='tab'
