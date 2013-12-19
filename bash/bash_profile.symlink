@@ -18,3 +18,5 @@ export PATH="/usr/local/heroku/bin:$PATH"
 export GOPATH=~/gocode
 export GOROOT=`go env GOROOT`
 export PATH=$GOPATH/bin:$PATH
+
+set +H
