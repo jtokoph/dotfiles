@@ -53,3 +53,6 @@ function tab {
             -e 'end tell' > /dev/null
 }
 alias t='tab'
+
+# disable history file writing for this session
+alias incog='unset HISTFILE'
