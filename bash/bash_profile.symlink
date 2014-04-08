@@ -12,11 +12,5 @@ fi
 
 # load every completion after autocomplete loads
 for config_file in $DOTFILES/**/completion.sh; do source $config_file; done
-### Added by the Heroku Toolbelt
-export PATH="/usr/local/heroku/bin:$PATH"
-
-export GOPATH=~/gocode
-export GOROOT=`go env GOROOT`
-export PATH=$GOPATH/bin:$PATH
 
 set +H
