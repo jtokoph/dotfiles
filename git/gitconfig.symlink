@@ -10,7 +10,7 @@
     k = !open `git config --get remote.origin.url | sed 's/.*:\\(.*\\)\\.git/https:\\/\\/github\\.com\\/\\1\\/network/'`
     history = "!sh -c \"open `git config --get remote.origin.url | sed 's/.*:\\(.*\\)\\.git/https:\\/\\/github\\.com\\/\\1\\/commits\\/master\\//'`\\$1\"" -
 [core]
-    editor = atom -w
+    editor = subl -w
     excludesfile = ~/.gitignore
     ignorecase = false
 [color]
