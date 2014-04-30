@@ -5,6 +5,9 @@
 # Always wait
 export EDITOR="subl -w"
 
+export HISTSIZE=4000
+export HISTFILESIZE=4000
+
 export CLICOLOR=1
 
 # @gf3’s Sexy Bash Prompt, inspired by “Extravagant Zsh Prompt”
