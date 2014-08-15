@@ -14,3 +14,5 @@ fi
 for config_file in $DOTFILES/**/completion.sh; do source $config_file; done
 
 set +H
+
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
