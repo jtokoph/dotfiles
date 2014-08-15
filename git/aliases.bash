@@ -17,7 +17,7 @@ alias cleanup-deleted-clipboard-files="git ls-files --deleted| xargs git rm"
 
 # Open pull request
 function currepo() {
-    git config --get remote.origin.url | sed 's/.*:\(.*\)\.git/\1/';
+    git config --get remote.origin.url | sed 's/.*@\(.*\)/\1/' | sed 's/\(.*\):\(.*\)/\1\/\2/' | sed 's/\(.*\)\.git/\1/';
 }
 function curbranch() {
     git branch --no-color 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/\1/';
