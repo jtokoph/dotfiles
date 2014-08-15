@@ -22,4 +22,4 @@ function currepo() {
 function curbranch() {
     git branch --no-color 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/\1/';
 }
-alias openpr="open https://github.com/\`currepo\`/pull/new/\`curbranch\`"
+alias openpr="open https://\`currepo\`/pull/new/\`curbranch\`"
