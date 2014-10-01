@@ -30,6 +30,20 @@ function _s() {
 
 complete -F _s s
 
+# Allow quick access to projects/sites
+function b() {
+    cd ~/Sites/blockspring/$1
+}
+
+function _b() {
+    local completions=`ls ~/Sites/blockspring/`
+    local word=${COMP_WORDS[COMP_CWORD]}
+    COMPREPLY=( $( compgen -W "$completions" -- $word ))
+    return 0
+}
+
+complete -F _b b
+
 
 
 # credit: http://nparikh.org/notes/zshrc.txt
