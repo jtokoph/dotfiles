@@ -8,3 +8,5 @@ _mosh ()
     _known_hosts_real -a -- "$(_get_cword)"
 } &&
 complete -F _mosh mosh
+
+complete -C aws_completer aws

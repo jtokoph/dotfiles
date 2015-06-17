@@ -20,8 +20,11 @@ alias ip="dig +short myip.opendns.com @resolver1.opendns.com"
 alias localip="ipconfig getifaddr en1"
 alias ips="ifconfig -a | grep -o 'inet6\? \(\([0-9]\+\.[0-9]\+\.[0-9]\+\.[0-9]\+\)\|[a-fA-F0-9:]\+\)' | sed -e 's/inet6* //'"
 
+# All the dig info
+alias dig="dig +nocmd any +multiline +noall +answer"
+
 # Enhanced WHOIS lookups
-alias whois="whois -h whois-servers.net"
+#alias whois="whois -h whois-servers.net"
 
 # Flush Directory Service cache
 alias flush="dscacheutil -flushcache"
@@ -54,5 +57,12 @@ function tab {
 }
 alias t='tab'
 
+# Shortcuts
+alias g="git"
+alias v="vim"
+alias a="atom"
+
 # disable history file writing for this session
 alias incog='unset HISTFILE'
+
+alias bsa="atom ~/Sites/blockspring/juicebox ~/Sites/blockspring/nodebox-sender ~/Sites/blockspring/nodebox-receiver ~/Sites/blockspring/script-run-service"
