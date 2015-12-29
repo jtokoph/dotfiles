@@ -7,14 +7,17 @@ function title() {
 
 function pc() {
     if [ $CUSTOM_TITLE_SET == 0 ]; then
-        echo -n -e "\033]0;`hostname | sed 's/\..*//'`\007";
+        LOCATION="$(basename `git rev-parse --show-toplevel 2> /dev/null` 2> /dev/null)"
+        if [ $? == 1 ]; then
+            LOCATION="$(basename $(pwd))"
+        fi
+        echo -n -e "\033]0;$LOCATION$(parse_git_branch)\007"
     else
         title $CUSTOM_TITLE
     fi
 }
 
-export PROMPT_COMMAND='pc'
-
+export PROMPT_COMMAND="$PROMPT_COMMAND pc; "
 
 # Allow quick access to projects/sites
 function s() {
@@ -66,6 +69,7 @@ function smartextract () {
             *.pax)      cat $1 | pax -r                     ;;
             *.pax.Z)    uncompress $1 --stdout | pax -r     ;;
             *.Z)        uncompress $1                       ;;
+            *.rar)      unrar x $1                          ;;
             *)          echo "'$1' cannot be extracted/mounted via smartextract()" ;;
         esac
     else
