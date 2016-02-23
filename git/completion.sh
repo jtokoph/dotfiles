@@ -1,6 +1,8 @@
-completion=/usr/local/etc/bash_completion.d/git-completion.bash
+# This should be done via homebrew's directory now
 
-if [ -f $completion ]; then
-  source $completion
-  complete -o default -o nospace -F _git g
-fi
+# completion=/usr/local/etc/bash_completion.d/git-completion.bash
+#
+# if [ -f $completion ]; then
+#   source $completion
+#   complete -o default -o nospace -F _git g
+# fi

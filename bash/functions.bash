@@ -11,7 +11,7 @@ function pc() {
         if [ $? == 1 ]; then
             LOCATION="$(basename $(pwd))"
         fi
-        echo -n -e "\033]0;$LOCATION$(parse_git_branch)\007"
+        echo -n -e "\033]0;$LOCATION$(prompt_git)\007"
     else
         title $CUSTOM_TITLE
     fi

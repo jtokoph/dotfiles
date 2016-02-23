@@ -1,18 +1,23 @@
 [user]
-    name = Jason Tokoph
-    email = jason@tokoph.net
+	name = Jason Tokoph
+	email = jason@tokoph.net
 [alias]
-    co = checkout
-    who = shortlog -s --
-    browse = !open `git config --get remote.origin.url | sed 's/.*:\\(.*\\)\\.git/https:\\/\\/github\\.com\\/\\1/'`
-    commits = !open `git config --get remote.origin.url | sed 's/.*:\\(.*\\)\\.git/https:\\/\\/github\\.com\\/\\1\\/commits/'`
-    network = !open `git config --get remote.origin.url | sed 's/.*:\\(.*\\)\\.git/https:\\/\\/github\\.com\\/\\1\\/network/'`
-    k = !open `git config --get remote.origin.url | sed 's/.*:\\(.*\\)\\.git/https:\\/\\/github\\.com\\/\\1\\/network/'`
-    history = "!sh -c \"open `git config --get remote.origin.url | sed 's/.*:\\(.*\\)\\.git/https:\\/\\/github\\.com\\/\\1\\/commits\\/master\\//'`\\$1\"" -
+	pr = pull-request -o
+	co = checkout
+	who = shortlog -s --
+	#browse = !open `git config --get remote.origin.url | sed 's/.*:\\(.*\\)\\.git/https:\\/\\/github\\.com\\/\\1/'`
+	#commits = !open `git config --get remote.origin.url | sed 's/.*:\\(.*\\)\\.git/https:\\/\\/github\\.com\\/\\1\\/commits/'`
+	#network = !open `git config --get remote.origin.url | sed 's/.*:\\(.*\\)\\.git/https:\\/\\/github\\.com\\/\\1\\/network/'`
+	k = !open `git config --get remote.origin.url | sed 's/.*:\\(.*\\)\\.git/https:\\/\\/github\\.com\\/\\1\\/network/'`
+	#history = "!sh -c \"open `git config --get remote.origin.url | sed 's/.*:\\(.*\\)\\.git/https:\\/\\/github\\.com\\/\\1\\/commits\\/master\\//'`\\$1\"" -
 [core]
-    editor = subl -w
-    excludesfile = ~/.gitignore
-    ignorecase = false
+  editor = subl -w
+	excludesfile = /Users/jtokoph/.gitignore_global
+  ignorecase = false
+  # https://github.com/stevemao/diff-so-fancy
+  # npm install -g diff-so-fancy
+  # brew install gnu-sed --with-default-names
+	pager = diff-highlight | diff-so-fancy | less --tabs=1,5 -R
 [color]
     diff = auto
     status = auto
@@ -45,3 +50,30 @@
 	clean = git hawser clean %f
 	smudge = git hawser smudge %f
 	required = true
+[color "diff"]
+	meta = yellow bold
+	commit = green bold
+	frag = magenta bold
+	old = red bold
+	new = green bold
+	whitespace = red reverse
+[color "diff-highlight"]
+	oldNormal = red bold
+	oldHighlight = red bold 52
+	newNormal = green bold
+	newHighlight = green bold 22
+[color "branch"]
+	current = yellow reverse
+	local = yellow
+	remote = green
+[color "status"]
+	added = green
+	changed = yellow
+	untracked = cyan
+	branch = red
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path =
+[mergetool "sourcetree"]
+	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
