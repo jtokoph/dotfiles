@@ -1,5 +1,9 @@
 # some from https://github.com/mathiasbynens/dotfiles/blob/master/.aliases
 
+if [[ `command -v atom-beta` ]]; then
+  alias atom='atom-beta'
+fi
+
 # Reload config
 alias rl='source ~/.bash_profile'
 

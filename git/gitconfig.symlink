@@ -1,6 +1,7 @@
 [user]
 	name = Jason Tokoph
 	email = jason@tokoph.net
+	signingkey = D077108D
 [alias]
 	pr = pull-request -o
 	co = checkout
@@ -77,3 +78,5 @@
 [mergetool "sourcetree"]
 	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
 	trustExitCode = true
+[commit]
+	gpgsign = true
