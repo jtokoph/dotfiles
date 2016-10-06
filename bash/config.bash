@@ -183,7 +183,7 @@ set_prompts() {
     # Then, we log the current time, filename and line number, followed by function name, followed by actual source line
 
     # FWIW, I have spent hours attempting to get time-per-command in here, but it's not possible. ~paul
-    export PS4='+ \011\e[1;30m\t\011\e[1;34m${BASH_SOURCE}\e[0m:\e[1;36m${LINENO}\e[0m \011 ${FUNCNAME[0]:+\e[0;35m${FUNCNAME[0]}\e[1;30m()\e[0m:\011\011 }'
+    #export PS4='+ \011\e[1;30m\t\011\e[1;34m${BASH_SOURCE}\e[0m:\e[1;36m${LINENO}\e[0m \011 ${FUNCNAME[0]:+\e[0;35m${FUNCNAME[0]}\e[1;30m()\e[0m:\011\011 }'
 
 
     # shoutouts:

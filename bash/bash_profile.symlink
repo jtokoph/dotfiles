@@ -1,3 +1,9 @@
+# Debugging
+# PS4='+ $(gdate "+%s.%N")\011 '
+# exec 3>&2 2>/tmp/bashstart.$$.log
+# set -x
+# gdate "+%s.%N"
+
 # shortcut to this dotfiles path is $DOTFILES
 export DOTFILES=$HOME/.dotfiles
 
@@ -16,3 +22,8 @@ for config_file in $DOTFILES/**/completion.sh; do source $config_file; done
 set +H
 
 test -e ${HOME}/.iterm2_shell_integration.bash && source ${HOME}/.iterm2_shell_integration.bash
+
+# Debugging
+# set +x
+# exec 2>&3 3>&-
+# gdate "+%s.%N"
