@@ -3,7 +3,7 @@
 #export GIT_PS1_SHOWSTASHSTATE=1
 
 # Always wait
-export EDITOR="atom -w"
+export EDITOR="subl -w"
 
 export HISTSIZE=4000
 export HISTFILESIZE=4000

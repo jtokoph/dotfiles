@@ -1,1 +1,0 @@
-complete -F _todo todo

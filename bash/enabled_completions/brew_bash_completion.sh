@@ -1,0 +1,1 @@
+/usr/local/etc/bash_completion.d/brew_bash_completion.sh
