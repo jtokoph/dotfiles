@@ -1,0 +1,9 @@
+AllCops:
+  DisplayCopNames: true
+  DisplayStyleGuide: true
+  TargetRubyVersion: 2.3
+
+Style/ConditionalAssignment:
+  Enabled: false
+Style/Documentation:
+  Enabled: false

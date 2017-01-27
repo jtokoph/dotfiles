@@ -1,5 +1,5 @@
 {
-    "extends": "airbnb-base",
+    "extends": "airbnb",
     "installedESLint": true,
     "parser": "babel-eslint",
     "plugins": [
@@ -18,7 +18,7 @@
         "arrow-body-style": "off",
         "react/jsx-uses-react": "error",
         "react/jsx-uses-vars": "error",
-        "react/jsx-filename-extension": "error"
+        "react/jsx-filename-extension": "off"
     },
     "settings": {
         "import/extensions": [".js", ".jsx"],
