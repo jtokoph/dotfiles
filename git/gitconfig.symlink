@@ -12,8 +12,8 @@
 	k = !open `git config --get remote.origin.url | sed 's/.*:\\(.*\\)\\.git/https:\\/\\/github\\.com\\/\\1\\/network/'`
 	#history = "!sh -c \"open `git config --get remote.origin.url | sed 's/.*:\\(.*\\)\\.git/https:\\/\\/github\\.com\\/\\1\\/commits\\/master\\//'`\\$1\"" -
 [core]
-  editor = subl -w
-	excludesfile = /Users/jtokoph/.gitignore_global
+  editor = micro
+  excludesfile = /Users/jtokoph/.gitignore_global
   ignorecase = false
   # https://github.com/stevemao/diff-so-fancy
   # npm install -g diff-so-fancy

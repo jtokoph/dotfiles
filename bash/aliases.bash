@@ -34,7 +34,7 @@ alias dig="dig +nocmd any +multiline +noall +answer"
 alias flush="dscacheutil -flushcache"
 
 # Trim new lines and copy to clipboard
-alias c="tr -d '\n' | pbcopy"
+alias copy="tr -d '\n' | pbcopy"
 
 # URL-encode strings
 alias urlencode='python -c "import sys, urllib as ul; print ul.quote_plus(sys.argv[1]);"'
@@ -59,12 +59,18 @@ function tab {
             -e "do script \"cd `pwd` && cd ${1-.} && clear\" in front window" \
             -e 'end tell' > /dev/null
 }
-alias t='tab'
+# alias t='tab'
+
+alias t="cd ~/tmp"
 
 # Shortcuts
 alias g="git"
 alias v="vim"
 alias a="atom"
+# alias c="code"
+function c {
+  code ${1-.}
+}
 
 # disable history file writing for this session
 alias incog='unset HISTFILE'
