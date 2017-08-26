@@ -18,7 +18,7 @@
   # https://github.com/stevemao/diff-so-fancy
   # npm install -g diff-so-fancy
   # brew install gnu-sed --with-default-names
-	pager = diff-highlight | diff-so-fancy | less --tabs=1,5 -R
+	pager = diff-so-fancy | less --tabs=1,5 -R
 [color]
     diff = auto
     status = auto
