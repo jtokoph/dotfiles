@@ -14,3 +14,6 @@ export PATH=./bin:$PATH
 
 # This was slow, not needed anymore? http://dave.cheney.net/2013/06/14/you-dont-need-to-set-goroot-really
 #export GOROOT=`go env GOROOT`
+
+# brew python
+export PATH="/usr/local/opt/python/libexec/bin:$PATH"

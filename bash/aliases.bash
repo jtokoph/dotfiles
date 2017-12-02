@@ -72,6 +72,9 @@ function c {
   code ${1-.}
 }
 
+alias dc="docker-compose"
+alias ci="code-insiders"
+
 # disable history file writing for this session
 alias incog='unset HISTFILE'
 

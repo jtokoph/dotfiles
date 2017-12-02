@@ -19,8 +19,8 @@ layout laptopCode 'iTerm2' push right bar-resize:screenSizeX/2
 layout laptopCode 'Google Chrome' push left bar-resize:screenSizeX/2
 
 
-bind `:f19 layout code
-bind `:f19;shift layout laptopCode
+bind `:shift,esc layout code
+bind `:shift,esc;shift layout laptopCode
 
 # Resize Bindings
 # bind right:alt       resize +10% +0
@@ -33,20 +33,20 @@ bind `:f19;shift layout laptopCode
 # bind down:ctrl;alt   resize +0   -10% bottom-right
 
 # Push Bindings
-bind right:ctrl;cmd  push right bar-resize:screenSizeX/3
-bind left:ctrl;cmd   push left  bar-resize:screenSizeX/3
+bind right:ctrl;cmd  push right bar-resize:screenSizeX/2
+bind left:ctrl;cmd   push left  bar-resize:screenSizeX/2
 bind up:ctrl;cmd     push up    bar-resize:screenSizeY/2
 bind down:ctrl;cmd   push down  bar-resize:screenSizeY/2
 
-bind d:f19   push right bar-resize:screenSizeX/2
-bind a:f19   push left  bar-resize:screenSizeX/2
-bind w:f19   push up    bar-resize:screenSizeY/2
-bind x:f19   push down  bar-resize:screenSizeY/2
-bind q:f19 corner top-left resize:screenSizeX/2;screenSizeY/2
-bind e:f19 corner top-right resize:screenSizeX/2;screenSizeY/2
-bind z:f19 corner bottom-left resize:screenSizeX/2;screenSizeY/2
-bind c:f19 corner bottom-right resize:screenSizeX/2;screenSizeY/2
-bind s:f19 ${full}
+bind d:shift,esc   push right bar-resize:screenSizeX/2
+bind a:shift,esc   push left  bar-resize:screenSizeX/2
+bind w:shift,esc   push up    bar-resize:screenSizeY/2
+bind x:shift,esc   push down  bar-resize:screenSizeY/2
+bind q:shift,esc corner top-left resize:screenSizeX/2;screenSizeY/2
+bind e:shift,esc corner top-right resize:screenSizeX/2;screenSizeY/2
+bind z:shift,esc corner bottom-left resize:screenSizeX/2;screenSizeY/2
+bind c:shift,esc corner bottom-right resize:screenSizeX/2;screenSizeY/2
+bind s:shift,esc ${full}
 
 # Nudge Bindings
 bind right:shift;alt nudge +10% +0
@@ -63,9 +63,9 @@ bind left:ctrl;alt;cmd  throw left  resize
 bind up:ctrl;alt;cmd    throw up    resize
 bind down:ctrl;alt;cmd  throw down  resize
 
-bind 1:f19         throw 0 resize
-bind 2:f19         throw 1 resize
-bind 3:f19         throw 2 resize
+bind 1:shift,esc         throw 0 resize
+bind 2:shift,esc         throw 1 resize
+bind 3:shift,esc         throw 2 resize
 
 # Focus Bindings
 bind right:cmd    focus right
@@ -75,10 +75,10 @@ bind down:cmd     focus down
 bind up:cmd;alt   focus behind
 bind down:cmd;alt focus behind
 
-bind j:f19:toggle focus left
-bind k:f19:toggle focus up
-bind l:f19:toggle focus down
-bind ;:f19:toggle focus right
+bind j:shift,esc:toggle focus left
+bind k:shift,esc:toggle focus up
+bind l:shift,esc:toggle focus down
+bind ;:shift,esc:toggle focus right
 
 # Window Hints
 bind esc:cmd hint
