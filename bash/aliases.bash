@@ -25,7 +25,7 @@ alias localip="ipconfig getifaddr en1"
 alias ips="ifconfig -a | grep -o 'inet6\? \(\([0-9]\+\.[0-9]\+\.[0-9]\+\.[0-9]\+\)\|[a-fA-F0-9:]\+\)' | sed -e 's/inet6* //'"
 
 # All the dig info
-alias dig="dig +nocmd any +multiline +noall +answer"
+# alias dig="dig +nocmd any +multiline +noall +answer"
 
 # Enhanced WHOIS lookups
 #alias whois="whois -h whois-servers.net"

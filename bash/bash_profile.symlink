@@ -29,3 +29,6 @@ test -e ${HOME}/.iterm2_shell_integration.bash && source ${HOME}/.iterm2_shell_i
 # /usr/local/bin/gdate "+%s.%N"
 
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
+
+# added by Miniconda3 installer
+# export PATH="/Users/jtokoph/miniconda3/bin:$PATH"
