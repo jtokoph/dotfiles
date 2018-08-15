@@ -106,3 +106,10 @@ export CLICOLOR_FORCE=1
 # Blockspring
 export DEV_USERNAME=jtokoph
 export DEV_EMAIL=jason@blockspring.com
+
+# brew install zsh-autosuggestions
+source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+
+# brew install zsh-syntax-highlighting
+# Must be last?
+source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
