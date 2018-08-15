@@ -1,3 +1,6 @@
+# Where are these files kept?
+export DOTFILES=$HOME/.dotfiles
+
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
@@ -56,7 +59,7 @@ CASE_SENSITIVE="true"
 # HIST_STAMPS="mm/dd/yyyy"
 
 # Would you like to use another custom folder than $ZSH/custom?
-ZSH_CUSTOM=~/.dotfiles/zsh/custom
+ZSH_CUSTOM=$DOTFILES/zsh/custom
 
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
@@ -87,10 +90,19 @@ alias ll='ls -la'
 
 # Quick alias to reload config
 alias reload="source ~/.zshrc"
+alias dotfiles="cd $DOTFILES"
+
+# Add the extra hub command features
+alias git="hub"
 
 # Use mac colors for ls and such
 unset LSCOLORS
 export CLICOLOR=1
 export CLICOLOR_FORCE=1
 
-source ./iterm2_shell_integration.zsh
+# Blockspring
+export DEV_USERNAME=jtokoph
+export DEV_EMAIL=jason@blockspring.com
+
+# Load any custom files
+for config_file in $DOTFILES/zsh/*.zsh; do source $config_file; done
