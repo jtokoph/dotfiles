@@ -95,6 +95,9 @@ alias dotfiles="cd $DOTFILES"
 # Add the extra hub command features
 alias git="hub"
 
+# Always use ssh agent
+alias ssh="ssh -A"
+
 # Use mac colors for ls and such
 unset LSCOLORS
 export CLICOLOR=1
@@ -103,6 +106,3 @@ export CLICOLOR_FORCE=1
 # Blockspring
 export DEV_USERNAME=jtokoph
 export DEV_EMAIL=jason@blockspring.com
-
-# Load any custom files
-for config_file in $DOTFILES/zsh/*.zsh; do source $config_file; done
