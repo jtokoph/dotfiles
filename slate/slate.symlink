@@ -1,6 +1,3 @@
-# This is the default .slate file.
-# If no ~/.slate file exists this is the file that will be used.
-
 config defaultToCurrentScreen true
 config nudgePercentOf screenSize
 config resizePercentOf screenSize
@@ -10,17 +7,22 @@ config modalEscapeKey esc
 alias full move screenOriginX;screenOriginY screenSizeX;screenSizeY
 
 # Layouts
-layout code 'Code' corner top-right resize:screenSizeX/2;screenSizeY/2
-layout code 'iTerm2' corner bottom-right resize:screenSizeX/2;screenSizeY/2
-layout code 'Google Chrome' push left bar-resize:screenSizeX/2
+layout code 'Google Chrome' push left bar-resize:screenSizeX/4
+layout code 'Code' move screenSizeX/4;0 screenSizeX/2;screenSizeY
+layout code 'GoLand' move screenSizeX/4;0 screenSizeX/2;screenSizeY
+layout code 'iTerm2' push right bar-resize:screenSizeX/4
 
 layout laptopCode 'Code' push right bar-resize:screenSizeX/2
+layout laptopCode 'GoLand' push right bar-resize:screenSizeX/2
 layout laptopCode 'iTerm2' push right bar-resize:screenSizeX/2
 layout laptopCode 'Google Chrome' push left bar-resize:screenSizeX/2
 
+layout codeTmux 'Google Chrome' push left bar-resize:screenSizeX*2/5
+layout codeTmux 'Code' push right bar-resize:screenSizeX*3/5
 
 bind `:shift,esc layout code
 bind `:shift,esc;shift layout laptopCode
+bind v:shift,esc layout codeTmux
 
 # Resize Bindings
 # bind right:alt       resize +10% +0
@@ -46,6 +48,9 @@ bind q:shift,esc corner top-left resize:screenSizeX/2;screenSizeY/2
 bind e:shift,esc corner top-right resize:screenSizeX/2;screenSizeY/2
 bind z:shift,esc corner bottom-left resize:screenSizeX/2;screenSizeY/2
 bind c:shift,esc corner bottom-right resize:screenSizeX/2;screenSizeY/2
+bind a:alt,esc   push left bar-resize:screenSizeX/4
+bind d:alt,esc   push right bar-resize:screenSizeX/4
+bind s:alt,esc   move screenSizeX/4;0 screenSizeX/2;screenSizeY
 bind s:shift,esc ${full}
 
 # Nudge Bindings
