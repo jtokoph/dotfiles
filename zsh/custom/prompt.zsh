@@ -1,8 +1,3 @@
-# Use mac colors for ls and such
-unset LSCOLORS
-export CLICOLOR=1
-export CLICOLOR_FORCE=1
-
 NEWLINE=$'\n'
 
 if [ -e ~/.rvm/bin/rvm-prompt ]; then

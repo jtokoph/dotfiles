@@ -82,7 +82,7 @@ source $ZSH/oh-my-zsh.sh
 # User configuration
 
 # Project directories
-PROJECT_PATHS=(~/Sites ~/Sites/blockspring)
+PROJECT_PATHS=(~/src)
 alias s='pj'
 alias b='pj'
 
