@@ -252,5 +252,7 @@
     },
     "cursor.composer.shouldChimeAfterChatFinishes": true,
     "terminal.integrated.fontFamily": "Menlo, Monaco, 'Courier New', monospace, \"Hack Nerd Font\"",
-    "elixirLS.stdlibSrcDir": "/Users/jtokoph/.asdf/installs/elixir/1.18.3"
+    "elixirLS.stdlibSrcDir": "/Users/jtokoph/.asdf/installs/elixir/1.18.3",
+    "evenBetterToml.formatter.indentEntries": true,
+    "evenBetterToml.formatter.indentTables": true
 }
