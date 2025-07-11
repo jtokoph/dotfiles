@@ -251,5 +251,6 @@
         "editor.defaultFormatter": "biomejs.biome"
     },
     "cursor.composer.shouldChimeAfterChatFinishes": true,
-    "terminal.integrated.fontFamily": "Menlo, Monaco, 'Courier New', monospace, \"Hack Nerd Font\""
+    "terminal.integrated.fontFamily": "Menlo, Monaco, 'Courier New', monospace, \"Hack Nerd Font\"",
+    "elixirLS.stdlibSrcDir": "/Users/jtokoph/.asdf/installs/elixir/1.18.3"
 }
