@@ -104,15 +104,15 @@ automatically-unhide-macos-hidden-apps = true
   alt-comma = 'layout accordion horizontal vertical'
 
   # See: https://nikitabobko.github.io/AeroSpace/commands#focus
-  alt-j = 'focus left --boundaries all-monitors-outer-frame --boundaries-action wrap-around-all-monitors'
-  alt-k = 'focus down --boundaries all-monitors-outer-frame --boundaries-action wrap-around-all-monitors'
-  alt-i = 'focus up --boundaries all-monitors-outer-frame --boundaries-action wrap-around-all-monitors'
+  alt-h = 'focus left --boundaries all-monitors-outer-frame --boundaries-action wrap-around-all-monitors'
+  alt-j = 'focus down --boundaries all-monitors-outer-frame --boundaries-action wrap-around-all-monitors'
+  alt-k = 'focus up --boundaries all-monitors-outer-frame --boundaries-action wrap-around-all-monitors'
   alt-l = 'focus right --boundaries all-monitors-outer-frame --boundaries-action wrap-around-all-monitors'
 
   # See: https://nikitabobko.github.io/AeroSpace/commands#move
-  alt-shift-j = 'move left'
-  alt-shift-k = 'move down'
-  alt-shift-i = 'move up'
+  alt-shift-h = 'move left'
+  alt-shift-j = 'move down'
+  alt-shift-k = 'move up'
   alt-shift-l = 'move right'
 
   # See: https://nikitabobko.github.io/AeroSpace/commands#resize
@@ -136,7 +136,7 @@ automatically-unhide-macos-hidden-apps = true
   alt-e = 'workspace E' # Email
   alt-f = 'workspace F'
   alt-g = 'workspace G' # Games
-  alt-h = 'workspace H'
+  alt-i = 'workspace I'
   alt-m = 'workspace M' # Messages
   alt-n = 'workspace N'
   alt-o = 'workspace O'
@@ -169,7 +169,7 @@ automatically-unhide-macos-hidden-apps = true
   alt-shift-e = 'move-node-to-workspace E'
   alt-shift-f = 'move-node-to-workspace F'
   alt-shift-g = 'move-node-to-workspace G'
-  alt-shift-h = 'move-node-to-workspace H'
+  alt-shift-i = 'move-node-to-workspace I'
   alt-shift-m = 'move-node-to-workspace M'
   alt-shift-n = 'move-node-to-workspace N'
   alt-shift-o = 'move-node-to-workspace O'
@@ -207,9 +207,9 @@ automatically-unhide-macos-hidden-apps = true
   # sticky is not yet supported https://github.com/nikitabobko/AeroSpace/issues/2
   #s = ['layout sticky tiling', 'mode main']
 
-  alt-shift-j = ['join-with left', 'mode main']
-  alt-shift-k = ['join-with down', 'mode main']
-  alt-shift-i = ['join-with up', 'mode main']
+  alt-shift-h = ['join-with left', 'mode main']
+  alt-shift-j = ['join-with down', 'mode main']
+  alt-shift-k = ['join-with up', 'mode main']
   alt-shift-l = ['join-with right', 'mode main']
 
   down = 'volume down'
