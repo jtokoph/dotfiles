@@ -1,0 +1,37 @@
+{
+    "extends": "airbnb",
+    "parser": "babel-eslint",
+    "plugins": [
+        "react"
+    ],
+    "parserOptions": {
+        "ecmaVersion": 7,
+        "ecmaFeatures": {
+            "classes": true,
+            "jsx": true
+        }
+    },
+    "rules": {
+        "no-console": "off",
+        "class-methods-use-this": "off",
+        "arrow-body-style": "off",
+        "react/jsx-uses-react": "error",
+        "react/jsx-uses-vars": "error",
+        "react/jsx-filename-extension": "off"
+    },
+    "settings": {
+        "import/extensions": [".js", ".jsx"],
+        "import/resolver": {
+            "node": {
+                "extensions": [".js", ".jsx", ".json"]
+            }
+        }
+    },
+    "globals": {
+        "fetch": "true",
+        "__DEVTOOLS__": true,
+        "window": true,
+        "document": true,
+        "confirm": true
+    }
+}

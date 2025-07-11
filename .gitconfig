@@ -1,0 +1,79 @@
+[user]
+	name = Jason Tokoph
+	email = jason@tokoph.net
+	signingkey = 26278E1DDE8B8337
+[alias]
+	co = checkout
+	who = shortlog -s --
+[core]
+  editor = micro
+  excludesfile = /Users/jtokoph/.gitignore_global
+  ignorecase = false
+  # https://github.com/stevemao/diff-so-fancy
+  # npm install -g diff-so-fancy
+  # brew install gnu-sed --with-default-names
+	pager = diff-so-fancy | less --tabs=1,5 -R
+[color]
+	diff = auto
+	status = auto
+	branch = auto
+	ui = true
+[diff]
+	renames = copies
+	mnemonicprefix = true
+[branch]
+	autosetupmerge = true
+[git-tmbundle]
+	gitk-path = /usr/bin/gitk
+[rerere]
+	endabled = 1
+[apply]
+	whitespace = nowarn
+[mergetool]
+	keepBackup = false
+[difftool]
+	prompt = false
+[help]
+	autocorrect = 1
+[push]
+	default = simple
+[filter "media"]
+	required = true
+	clean = git media clean %f
+	smudge = git media smudge %f
+[filter "hawser"]
+	clean = git hawser clean %f
+	smudge = git hawser smudge %f
+	required = true
+[color "diff"]
+	meta = yellow bold
+	commit = green bold
+	frag = magenta bold
+	old = red bold
+	new = green bold
+	whitespace = red reverse
+[color "diff-highlight"]
+	oldNormal = red bold
+	oldHighlight = red bold 52
+	newNormal = green bold
+	newHighlight = green bold 22
+[color "branch"]
+	current = yellow reverse
+	local = yellow
+	remote = green
+[color "status"]
+	added = green
+	changed = yellow
+	untracked = cyan
+	branch = red
+[commit]
+	gpgsign = true
+[hub]
+	protocol = ssh
+[filter "lfs"]
+	process = git-lfs filter-process
+	required = true
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+[init]
+	defaultBranch = main

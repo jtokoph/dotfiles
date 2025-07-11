@@ -1,0 +1,10 @@
+nohup.out
+.DS_Store
+._*
+.Spotlight-V100
+.Trashes
+*~
+*.swp
+*.rbc
+.svn
+.zshrc_backup
