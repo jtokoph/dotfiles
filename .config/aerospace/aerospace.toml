@@ -241,6 +241,10 @@ automatically-unhide-macos-hidden-apps = true
   if.app-id = 'com.google.Chrome'
   run = 'move-node-to-workspace P'
 
+[[on-window-detected]]
+  if.app-id = 'com.1password.1password'
+  run = 'layout floating'
+
 # Steam
 [[on-window-detected]]
   if.app-name-regex-substring = 'Steam'
@@ -249,6 +253,10 @@ automatically-unhide-macos-hidden-apps = true
 # Whiskey
 [[on-window-detected]]
   if.app-id = 'com.isaacmarovitz.Whisky'
+  run = ['layout floating', 'move-node-to-workspace G']
+
+[[on-window-detected]]
+  if.app-name-regex-substring = 'wine64-preloader'
   run = ['layout floating', 'move-node-to-workspace G']
 
 # Heroic
