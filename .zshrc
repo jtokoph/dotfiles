@@ -54,17 +54,19 @@ setopt hist_ignore_dups
 zstyle ':completion:*' matcher-list 'm:{a-z}={A-Za-z}'
 zstyle ':completion:*' list-colors "${(s.:.)LS_COLORS}"
 zstyle ':completion:*' menu no
-zstyle ':fzf-tab:complete:cd:*' fzf-preview 'ls --color $realpath'
-zstyle ':fzf-tab:complete:__zoxide_z:*' fzf-preview 'ls --color $realpath'
+zstyle ':fzf-tab:complete:cd:*' fzf-preview 'eza --color=always $realpath'
+zstyle ':fzf-tab:complete:bat:*' fzf-preview 'bat --color=always --style=numbers --line-range=:500 $realpath 2>/dev/null || eza --color=always $realpath'
+zstyle ':fzf-tab:complete:__zoxide_z:*' fzf-preview 'eza --color=always $realpath'
 
 # Aliases
 alias dotfiles="cd ${DOTFILES}"
-alias ls='ls --color'
-alias ll='ls -la'
+alias ls='eza --color=always'
+alias ll='eza --color=always -lah'
 # Always use ssh agent
 alias ssh="ssh -A"
 alias tailscale="/Applications/Tailscale.app/Contents/MacOS/Tailscale"
 alias reload="source ~/.zshrc"
+alias cat="bat"
 
 # Path
 # dotfiles bin path

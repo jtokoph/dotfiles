@@ -18,6 +18,8 @@ fi
 
 BREW_PACKAGES=(
   asdf
+  bat
+  eza
   fzf
   git
   stow
