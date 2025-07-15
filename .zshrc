@@ -70,7 +70,7 @@ alias cat="bat"
 
 # Path
 # dotfiles bin path
-export PATH=$PATH:"${HOME}/dotfiles/bin"
+export PATH=$PATH:"${HOME}/dotfiles/bin":"${HOME}/bin"
 
 # go bin path
 export PATH=$HOME/go/bin:$PATH
@@ -88,7 +88,7 @@ if command -v zoxide &> /dev/null; then
 fi
 
 # Added by Docker Desktop to add docker bin to path
-source /Users/jtokoph/.docker/init-zsh.sh || true
+source ${HOME}/.docker/init-zsh.sh || true
 
 # Erlang/Elixir - Enable shell history persistence in IEX
 export ERL_AFLAGS="-kernel shell_history enabled"
