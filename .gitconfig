@@ -17,6 +17,8 @@
 	navigate = true
 	dark = true
 	side-by-side = true
+	hyperlinks = true
+	hyperlinks-file-link-format = "cursor://file/{path}:{line}"
 [color]
 	diff = auto
 	status = auto

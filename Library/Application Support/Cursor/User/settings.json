@@ -254,5 +254,14 @@
     "terminal.integrated.fontFamily": "Menlo, Monaco, 'Courier New', monospace, \"Hack Nerd Font\"",
     "elixirLS.stdlibSrcDir": "/Users/jtokoph/.asdf/installs/elixir/1.18.3",
     "evenBetterToml.formatter.indentEntries": true,
-    "evenBetterToml.formatter.indentTables": true
+    "evenBetterToml.formatter.indentTables": true,
+    "terminal.integrated.allowedLinkSchemes": [
+        "file",
+        "http",
+        "https",
+        "mailto",
+        "vscode",
+        "vscode-insiders",
+        "cursor"
+    ]
 }
