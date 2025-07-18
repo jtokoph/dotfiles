@@ -9,10 +9,14 @@
   editor = micro
   excludesfile = /Users/jtokoph/.gitignore_global
   ignorecase = false
-  # https://github.com/stevemao/diff-so-fancy
-  # npm install -g diff-so-fancy
-  # brew install gnu-sed --with-default-names
-	pager = diff-so-fancy | less --tabs=1,5 -R
+  # brew install git-delta
+	pager = delta
+[interactive]
+	diffFilter = delta --color-only
+[delta]
+	navigate = true
+	dark = true
+	side-by-side = true
 [color]
 	diff = auto
 	status = auto

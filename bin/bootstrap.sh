@@ -19,6 +19,7 @@ fi
 BREW_PACKAGES=(
   asdf
   bat
+  git-delta
   eza
   fzf
   git
