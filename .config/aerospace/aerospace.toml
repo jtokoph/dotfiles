@@ -202,7 +202,7 @@ automatically-unhide-macos-hidden-apps = true
     'layout floating tiling',
     'mode main',
   ] # Toggle between floating and tiling layout
-  backspace = ['close-all-windows-but-current', 'mode main']
+  # backspace = ['close-all-windows-but-current', 'mode main']
 
   # sticky is not yet supported https://github.com/nikitabobko/AeroSpace/issues/2
   #s = ['layout sticky tiling', 'mode main']
@@ -243,6 +243,10 @@ automatically-unhide-macos-hidden-apps = true
 
 [[on-window-detected]]
   if.app-id = 'com.1password.1password'
+  run = 'layout floating'
+
+[[on-window-detected]]
+  if.app-id = 'com.hegenberg.BetterTouchTool'
   run = 'layout floating'
 
 # Steam
