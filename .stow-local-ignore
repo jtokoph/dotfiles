@@ -30,3 +30,5 @@ bin
 com\.googlecode\.iterm2\.plist
 
 ^/zsh
+
+LaunchDaemons

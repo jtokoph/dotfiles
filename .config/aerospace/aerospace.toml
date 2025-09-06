@@ -220,6 +220,7 @@ automatically-unhide-macos-hidden-apps = true
   '1' = ['ES07D03', 'Built-in']
   'C' = ['ES07D03', 'Built-in']
   'M' = 'Built-in'
+  'Z' = 'Built-in'
 
 [[on-window-detected]]
   if.app-id = 'com.apple.MobileSMS'
@@ -271,6 +272,11 @@ automatically-unhide-macos-hidden-apps = true
 # Torhud
 [[on-window-detected]]
   if.app-id = 'com.torhud.app'
+  run = ['layout floating', 'move-node-to-workspace G']
+
+# Tempo launcher
+[[on-window-detected]]
+  if.app-id = 'com.electron.tempo-launcher-beta'
   run = ['layout floating', 'move-node-to-workspace G']
 
 # Launched Games from G stay on G

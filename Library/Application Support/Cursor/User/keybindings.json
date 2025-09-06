@@ -125,5 +125,9 @@
   {
     "key": "shift+cmd+a",
     "command": "composer.showBackgroundAgentHistory"
+  },
+  {
+    "key": "ctrl+f",
+    "command": "flash-vscode.jump"
   }
 ]
