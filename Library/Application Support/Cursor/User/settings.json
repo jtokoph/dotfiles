@@ -264,5 +264,11 @@
         "vscode-insiders",
         "cursor"
     ],
-    "vim.smartRelativeLine": true
+    "vim.smartRelativeLine": true,
+    "[typescript]": {
+        "editor.defaultFormatter": "biomejs.biome"
+    },
+    "[typescriptreact]": {
+        "editor.defaultFormatter": "biomejs.biome"
+    }
 }

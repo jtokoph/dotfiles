@@ -48,7 +48,7 @@ sudo installer -pkg ${HOME}/Downloads/Karabiner-DriverKit-VirtualHIDDevice-6.1.0
 
 /Applications/.Karabiner-VirtualHIDDevice-Manager.app/Contents/MacOS/Karabiner-VirtualHIDDevice-Manager activate
 
-echo "Make sure to drag the kanata binary to Input Monitoring https://github.com/jtroo/kanata/issues/1211#issuecomment-2327141671"
+echo "Make sure to drag the kanata binary to Input Monitoring https://github.com/jtroo/kanata/issues/1211#issuecomment-2327141671 and https://github.com/jtroo/kanata/discussions/1537"
 
 # Setup LaunchDaemons
 # sudo stow -d ${HOME}/dotfiles/LaunchDaemons -t /Library/LaunchDaemons .

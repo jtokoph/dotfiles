@@ -113,11 +113,6 @@
     "when": "terminalFocus && terminalHasBeenCreated || terminalFocus && terminalProcessSupported || terminalHasBeenCreated && terminalPromptBarVisible || terminalProcessSupported && terminalPromptBarVisible"
   },
   {
-    "key": "cmd+e",
-    "command": "-composer.showBackgroundAgentHistory",
-    "when": "backgroundComposerEnabled || showBackgroundAgentHistoryAction"
-  },
-  {
     "key": "shift+cmd+b",
     "command": "-workbench.view.backgroundAgent",
     "when": "viewContainer.workbench.view.backgroundAgent.enabled"
@@ -129,5 +124,15 @@
   {
     "key": "ctrl+f",
     "command": "flash-vscode.jump"
+  },
+  {
+    "key": "cmd+e",
+    "command": "-cursor.toggleAgentWindowIDEUnification",
+    "when": "cursor.agentIdeUnification.featureGate && workbenchState != 'empty'"
+  },
+  {
+    "key": "cmd+e",
+    "command": "-editor.action.toggleScreenReaderAccessibilityMode",
+    "when": "accessibilityHelpIsShown"
   }
 ]
