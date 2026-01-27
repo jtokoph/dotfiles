@@ -8,3 +8,4 @@ nohup.out
 *.rbc
 .svn
 .zshrc_backup
+settings.local.json

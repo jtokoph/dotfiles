@@ -31,3 +31,6 @@ com\.googlecode\.iterm2\.plist
 ^/zsh
 
 LaunchDaemons
+
+# Markdown files should be skipped
+.*.md

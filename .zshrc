@@ -72,6 +72,9 @@ alias cat="bat"
 # dotfiles bin path
 export PATH=$PATH:"${HOME}/dotfiles/bin":"${HOME}/bin"
 
+# .local/bin path
+export PATH=$PATH:"${HOME}/.local/bin"
+
 # go bin path
 export PATH=$HOME/go/bin:$PATH
 

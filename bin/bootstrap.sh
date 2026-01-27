@@ -30,6 +30,7 @@ BREW_PACKAGES=(
   font-hack-nerd-font
   zoxide
   kanata
+  tmux
 )
 
 brew install $BREW_PACKAGES
@@ -40,6 +41,10 @@ stow -d ${HOME}/dotfiles -t ${HOME} .
 asdf plugin add nodejs https://github.com/asdf-vm/asdf-nodejs.git
 
 asdf install nodejs latest
+
+# tmux plugin manager
+mkdir -p ~/.tmux/plugins
+git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 
 # Install Karabini-DriverKit-VirtualHIDDevice
 curl -L -o ${HOME}/Downloads/Karabiner-DriverKit-VirtualHIDDevice-6.1.0.pkg https://github.com/pqrs-org/Karabiner-DriverKit-VirtualHIDDevice/releases/download/v6.1.0/Karabiner-DriverKit-VirtualHIDDevice-6.1.0.pkg

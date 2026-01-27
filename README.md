@@ -12,3 +12,9 @@ cd ~/dotfiles
 
 ./bin/bootstrap.sh
 ```
+
+To just relink:
+
+```shell
+stow -d ${HOME}/dotfiles -t ${HOME} .
+```

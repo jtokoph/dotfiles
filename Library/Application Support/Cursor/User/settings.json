@@ -81,10 +81,12 @@
         "pids",
         "polyfill",
         "polyfills",
+        "prefersdark",
         "prepend",
         "promisify",
         "pylint",
         "resque",
+        "rgba",
         "rspec",
         "rubocop",
         "Rubyhooks",
@@ -101,7 +103,8 @@
         "upcase",
         "uuid",
         "webhook",
-        "webpacker"
+        "webpacker",
+        "webrtc"
     ],
     "editor.formatOnPaste": true,
     "emmet.syntaxProfiles": {
@@ -159,7 +162,7 @@
         ".pylintrc",
         "settings.json"
     ],
-    "extensions.ignoreRecommendations": false,
+    "extensions.ignoreRecommendations": true,
     "gitlens.advanced.messages": {
         "suppressCommitHasNoPreviousCommitWarning": false,
         "suppressCommitNotFoundWarning": false,
@@ -270,5 +273,13 @@
     },
     "[typescriptreact]": {
         "editor.defaultFormatter": "biomejs.biome"
-    }
+    },
+    "files.associations": {
+        "css": "tailwindcss"
+    },
+    "gitlens.hovers.enabled": false,
+    "redhat.telemetry.enabled": false,
+    "claudeCode.preferredLocation": "sidebar",
+    "claudeCode.selectedModel": "default",
+    "terminal.integrated.scrollback": 10000
 }

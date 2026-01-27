@@ -7,7 +7,7 @@
 	who = shortlog -s --
 [core]
   editor = micro
-  excludesfile = /Users/jtokoph/.gitignore_global
+	excludesfile = /Users/jtokoph/.gitignore
   ignorecase = false
   # brew install git-delta
 	pager = delta
